@@ -3,7 +3,7 @@ package com.extra;
 class MOuter
 {
   int count;
-  public void display()
+  public void Print()
   {
     for(int i=0;i<5;i++)
     {
@@ -12,7 +12,7 @@ class MOuter
       {
         public void show()
         {
-          System.out.println("Inside inner "+(count++));
+          System.out.println("From inner class "+(count++));
         }
       }
       InnerClassEx in=new InnerClassEx();
@@ -26,6 +26,6 @@ class MethodLocalInnerClassExample
   public static void main(String[] args)
   {
     MOuter ot = new MOuter();
-    ot.display();
+    ot.Print();
   }
 }
