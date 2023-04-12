@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.function.BiPredicate;
 
 import com.dal.controller.EmployeeController;
 import com.dal.controller.EmployeeInterface;
@@ -19,9 +20,12 @@ public class MainClass {
 
 		Scanner sc = new Scanner(System.in);
 		String Choice = null;
-
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader bsr = new BufferedReader(isr);
 		try {
-			String uname = null;
+			
+			// Use of inputsteamreader and buffered reader
+		/*	String uname = null;
 			String pwd = null;
 			InputStreamReader isr = new InputStreamReader(System.in);
 			BufferedReader bsr = new BufferedReader(isr);
@@ -35,8 +39,27 @@ public class MainClass {
 			} else {
 				throw new UserNotFoundException();
 
+			}*/
+			
+			//10th Apr Use of BiPredicate to perform username and password validation
+			String uname = null;
+			String pwd = null;
+			
+			System.out.println("Enter Username:");
+			uname = bsr.readLine();
+			System.out.println("Enter password:");
+			pwd = bsr.readLine();
+			
+			BiPredicate<String,String> res = (username,passwrd) -> username.equals("JBH");
+				
+			BiPredicate<String, String> res1 = (username, passwrd) -> passwrd.equals("abc");
+			//if username is JBH then welcome else welcome guest
+			if (res.and(res1).test(uname,pwd)) {
+				System.out.println("Welcome ");
+			} else {
+				throw new UserNotFoundException();
 			}
-		}
+		}	
 
 		catch (UserNotFoundException unf) {
 			System.out.println(unf);
@@ -53,6 +76,8 @@ public class MainClass {
 			System.out.println(("4. DeSerialise Employee"));
 			System.out.println(("5. Sort By EmpId"));
 			System.out.println(("6. Sort By EmpName"));
+			System.out.println(("7. Update EmpName"));
+			System.out.println(("8. Delete employee"));
 			int ch = sc.nextInt();
 			switch (ch) {
 			case 1: {
@@ -82,7 +107,18 @@ public class MainClass {
 				break;
 				
 			}
-
+			case 7: {
+				econtol.updateEmployee();
+				break;
+				
+			}
+			case 8: {
+				System.out.println("enter the employee id to be deleted");
+				int empid=  Integer.parseInt(bsr.readLine());
+						econtol.deleteEmployee(empid);
+				break;
+				
+			}
 			default: {
 				System.out.println(("enter your choice"));
 				break;

@@ -1,6 +1,5 @@
 package com.extra;
 
-
 public class VolatileEg {
      public static int flag = 0;
 	public static void main(String[] args) {

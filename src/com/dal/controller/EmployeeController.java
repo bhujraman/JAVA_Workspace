@@ -3,19 +3,26 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
+
+
 import com.dal.exception.UserNotFoundException;
 import com.dal.model.Employee;
 import java.util.Collections;
 import java.io.*;
 
+import com.dal.dao.EmployeeDaoImplmentation;
+import com.dal.dao.EmployeeDao;
+
+import com.dal.model.Employee;
+
 public class EmployeeController implements EmployeeInterface {
 	Employee emp;
-	List emplist = new ArrayList();
+	List<Employee> emplist = new ArrayList<Employee>();
 	UserNotFoundException obj = new UserNotFoundException();
+	EmployeeDao dao = new EmployeeDaoImplmentation();
 	
 	public void addEmployee()
 	{		
-		
 		
 		emp = new Employee();
 		Scanner sc = new Scanner(System.in);
@@ -27,16 +34,24 @@ public class EmployeeController implements EmployeeInterface {
 		String ename= sc.next();
 		emp.setEname(ename);
 		emplist.add(emp);
+		
+		dao.insertEmployee(emp);
 		System.out.println("Employee Added Succesfully");
+		
 	}
 	
 	public void viewEmployee() {
 		//System.out.println(emp);
-		Iterator i = emplist.iterator();
-		while(i.hasNext()) {
-			System.out.println(i.next());
-		}
+//		Iterator i = emplist.iterator();
+//		while(i.hasNext()) {
+//			System.out.println(i.next());
+		//emplist.forEach(emplist->System.out.println(emplist));
+			//emplist.forEach(System.out::println);// Use of Foreach and lambda in this 10th Mayx`
+		//}
+		dao.showEmployee();
 	}
+		
+	
 		
 		public void serialiseemp() throws IOException
 		{
@@ -98,6 +113,17 @@ public class EmployeeController implements EmployeeInterface {
 			Collections.sort(emplist, Employee.NameComparator);
 			System.out.println(emplist);
 			
+		}
+
+		@Override
+		public void updateEmployee() {
+			dao.updateEmployee(emp);
+			
+		}
+
+		@Override
+		public void deleteEmployee(int id) {
+			dao.deleteEmployee(id);
 		}
 	
 	
