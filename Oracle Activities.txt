@@ -1,0 +1,218 @@
+No 1:
+1. Display all the information of the EMP table.
+2. Display unique Jobs from EMP table.
+3. Display the details of all MANAGERS.
+-----------
+No 2:
+4. List the emps who joined before 1981.
+5. Display the Empno, Ename, Job, Hiredate, and experience of all Managers.
+6. List the Empno, Ename, Sal, Exp of all emps working for Mgr 7639.
+
+No 3:
+7. Display all the details of the emps whose Comm. Is more than their Sal.
+8. List the emps along with their Exp and whose Daily Sal is more than Rs. 100.
+9. List the emps who are working for the Deptno 10 or 20.
+
+No 4:
+10. List the emps who are working under any Manager.
+11. List all the Clerks of Deptno 20.
+12. Display the details of SMITH.
+
+No 5:
+13. Display the Empno, Ename, Deptno from EMP table.
+14. Write a query to display the Empno and the Deptno of all emps.
+15. Display the unique Depts of emps.
+
+No 6:
+16. List the emps whose Salary is more than 3000 after giving 20% increment.
+17. List the Ename and Sal increased by 15% and expressed as No. of Dollars.
+18. Produce the output of EMP table EMP_AND_JOB for Ename and job.
+
+No 7:
+19. Display the Empno, Ename, Salary of all Managers.
+20. Define a variable representing the expression used to calculate on emps total annual remuneration use the variable in a statement which finds all emps who can earn 30000 a year or more.
+
+No 8:
+21. Check whether all the emps numbers are indeed unique.
+22. List the Empno, Sal and Comm of emps.
+23. Display the unique dept with Jobs.
+
+No 9:
+24. Display the details of Blake.
+25. List all Clerks.
+26. List all emps joined on 1 may 1981.
+
+No 10:
+27. List the emps whose Salaries are less than 3500.
+28. List the emps Empno, Ename, Sal of all emp joined before 1 Apr 1981.
+29. List the emps whose exp is more than 10 years.
+
+No 11:
+30. List the emps who are working as Manager.
+31. List the emps who are working as clerks and exp is more that 8 Years.
+32. List the Empno, Ename, Sal, Job of emps with the annSal <34000 but receiving some comm. Which should not be greater than Sal and the designation should be Salesman working for dept 20.
+
+No 12:
+33. List all the Salesmen who are receiving Comm.
+34. List all the Salesmen of the Dept 30 whose Comm. Is more than their Salary.
+35. Generate all the 3 digit numbers.
+
+No 13:
+36. Display the first 5 records of the EMP table.
+37. List the emps empno, ename, job, sal of all emps.
+38. List all the unique deptno of emps.
+
+No 14:
+39. List all the unique jobs along with deptno.
+40. List all the details of ‘Miller’.
+41. list the details of dept 10.
+
+No 15:
+42. List all the ‘SALESMAN’.
+43. List all the emps who joined before 1984.
+44. List all the emps whose Sal>2500.
+
+No 16:
+45. List all the emps who are working since 1st April 1982.
+46. List the empno, ename, sal, Daily sal of all emps.
+47. List the empno, ename, sal, experience of all ‘Analysts’.
+
+No 17:
+48. List the emps whose exp>6.5 Y.
+49. List the emps who joined in 2nd half of 1981.
+50. List all the emps in dept 10 who are working as Clerks.
+
+No 18:
+51. List the emps who joined before 1985 and salary is more than 3000.
+52. List the Exp of Grade 3 emps.
+53. List the details of the emps whose salaries more than the employee BLAKE
+
+No 19:
+54. List the emps whose Jobs are as ALLLEN.
+55. List the emps who are senior to King.
+113. List the total information of EMP table along with Dname and Loc of all the emps working under ‘ACCOUNTING’ or ‘RESEARCH’ in the asc Deptno.
+
+No 20:
+114. List the Empno, Ename, Sal, Dname of al the ‘MANAGER’ and ‘ANALYST’ working in New York or Dallas with an exp more than 7 years without receiving the Comma sc order of Loc.
+115. Display the Empno, Ename, Sal, Dname, Log, Deptno, Job of all emps working at CHICAGO or working for ACCOUNTING dept with Ann sal >28000, but the Sal should not be = 3000 or 2800, Who doesn’t belongs to the Manager and Whose No. having a digit ‘7’ or ‘8’ in 3rd position in the asc order of Deptno and desc order of Job.
+116. Display the total information of the emps along with Grades I the asc order of grade.
+
+No 21:
+117. List all the grade 2 and Grade 3 emps.
+118. Display all grade 4.5 Analyst and Manager.
+119. List the Empno, Sal, Dname, grade, Experience and Annual sal of emps working for Dept 10 or 20.
+
+No 22:
+120. List the details of the Depts along with Empno, Ename or without the emps.
+121. List the emps whose are senior to their own Manager.
+122. List the emps of Deptno 20 whose Jobs are same as Deptno 10.
+
+No 23:
+123. List the emps whose Salary is same as FORD or SMITH in desc order of Salary.
+124. List the emps whose Jobs are sale as MILLER or Sal is more than ALLEN.
+125. List the emps whose Sal is more than the total remuderation of the SALESMAN.
+
+No 24:
+126. List the emps who are senior to BLAKE working at CHICAGO & BOSTON.
+127. List the emps of Grade 3,4 belongs to the dept ACCOUNTING and RESEARCH whose Sal is more than ALLEN and exp more than SMITH in the asc order of Exp.
+128. List the emps whose jobs same as SMITH or ALLEN.
+
+No 25:
+129. List the most recently hired employee of Grade 3 belongs to the Loc CHICAGO.
+130. List the emps with their Dept names.
+131. List the emps who are not working in ‘Sales’ dept.
+
+
+No 26:
+132. List the emps Name, Dept, Sal & Comm for those whose Salary is between 2000 and 5000 and Loc is Chicago.
+133. List the emps whose Salary is greater than his Manager’s salary.
+134. List the Grade, Ename for the Deptno 10 or 30 but grade is not 4 while they joined in the company before ’31-Dec-82’.
+
+NO 27:
+135. List the ename, Job, Dname, Loc for those who are working as a MANAGERS.
+136. List the emps whose Manager name is ‘Jones’ & also List their Manager names.
+137. List the Name and Salary of Ford if his Salary is equal to Hisal of his Grade.
+
+No 28:
+138. List the Name, Job, Dname, Mgrno, Salary, grade Dept wise.
+139. List the emps Name, Job and MGR without Manager.
+140. List the Name, Salary, Comm for those emps whose Net pay is greater than or equal to any other employee Salary of the company.
+
+No 29:
+141. List the emps whose Sal is less than his Manager but more than other Managers.
+142. List the Mgrs who are not working under ‘President’ but working under other Manager.
+143. List the emps who joined in the company on the same date.
+
+No 30:
+144. List the employee Name, Job, Annual salary, Deptno, dept name, and grade who earn 36000 a year and who are not CLERKS.
+145. List the Name, Job and Salary of the emps who are not belonging to the department 10 but who have the same Job or Salary as the emps of dept 10
+146. List the details of emps working at Chicago.
+
+NO 31:
+147. List the Empno, Ename, deptno, loc of all emps.
+148. List the Empno, Ename, loc of dname of the depts.10 or 20.
+149. List the empno, Sal, loc of emps working at Chicago sal as with an exp>6y.
+
+No 32:
+150. List the emps along with of those who belongs to Dallas New York with Sal ranging from 2000 to 5000 joined in 1981.
+151. List the Empno, Ename, Sal, grade of all emps.
+152. List the grade 2 & 3 emps of Chicago.
+
+No 33:
+153. List the emps with loc & grade of Accounting dept or the location Dallas or Chicago with the grades 3 to 5 & exp >6y.
+154. List the grades 3 emps of Research or Operations depts. Joined after 1987 and whose names should not be either Miller or Allen.
+155. List the emps whose Job is same as Smith.
+
+No 34:
+156. List the emps who are senior to Miller.
+157. List the emps whose Job is same as either Allen or Sal is more than Allen sal.
+158. List the emps whose Sal is greater than Blake salary.
+
+NO 35:
+159. List the dept 10 emps whose Sal is more than Allen Salary.
+160. List the Managers who are senior to king & who are junior to Smith.
+161. List the Empno, Ename, loc, Sal, Dname of all emps belongs to king dept.
+
+NO 36:
+162. List the emps whose grade is greater than the grade of Miller.
+163. List the emps who are belongs Dallas or Chicago with the grade same as Adams or exp more than Smith.
+164. List the emps whose Sal is same as Ford or Blake.
+
+No 37:
+165. List the emps details of the emp of Chicago.
+166. List the Empno, Ename, Sal, Experience, TA, HRA, DA and Gross and Dname of all emps joined in the year 1981 in the Loc NEWYORK and DALLAS with Sal <4500.
+167. List Empno, Ename, Sal, Dname, Loc of all emps working at DALLAS, with the Sal should not more than 3500 in the desc order of sal.
+
+No 38:
+168. List the information of EMP along with Loc, employee working at Loc which does not have a char ‘a’ with the annual Salary ranging from 22000 to 40000 without Comm.
+169. List the Empno, Ename, Deptno and Dname of all emps belongs to RESEARCH Dept.
+170. List all the emps along with Location who belongs to Depts 10 or 20.
+
+No 39:
+171. List the emps whose Sal is more than Blake Sal.
+172. List the emps of Deptno 10 whose Jobs are same as any emp job of deptno 20.
+173. List the emps who are senior to Ward.
+
+No 40:
+174. List the empno, ename, Sal, Grade of all emps who belongs to the grade 3 or 4
+175. List the Empno, Ename, Sal, Grade of all emps working for the mgrs 7788, 7369, 7566.
+176. List all the Grade 3 ‘Analysis and ‘managers’ in the asc order of Job.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
