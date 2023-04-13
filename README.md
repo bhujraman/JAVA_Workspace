@@ -13,3 +13,11 @@
 	April 12
 	perform UpdateEmployee
 	Perform DeleteEmployee
+	
+	Apr 13
+	Write queries
+	No 4:
+	10. List the emps who are working under any Manager.
+	11. List all the Clerks of Deptno 20.
+	12. Display the details of SMITH.
+
