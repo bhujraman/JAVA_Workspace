@@ -23,4 +23,7 @@
 	
 	Apr 18
 	Write queries using CURSOR
-
+       1.--To write a  Cursor to display the list of employees who are Working as a Managers or Analyst.
+       2.--Write PL/SQL code in Cursor to display employee names and salary
+       3.--Write PL/SQL code  to find the Reverse of the  number
+       4. Cursor implementation using parameters
