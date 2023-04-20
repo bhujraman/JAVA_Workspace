@@ -97,3 +97,29 @@ Pass three parameters to the procedure: the job , a new minimum salary, and a ne
 maximum salary for the job. Add exception handling to account for an invalid job name in the
 EMP table. Also, raise an exception if the maximum salary supplied is less than the
 minimum salary.*/
+
+create table emp1 as select * from emp;
+
+
+CREATE OR REPLACE PROCEDURE UpdateSal (
+currjob IN varchar2,
+minsal IN number,
+maxsal IN number
+) IS
+BEGIN
+UPDATE emp1
+SET sal = 
+CASE
+WHEN sal < maxsal THEN maxsal
+ELSE sal --dbms_output.put_line("Salary is less than or equal to current salary')
+END
+wHERE job = currjob;
+END;
+/
+
+exec UpdateSal('MANAGER',0,10001);
+
+--select * from emp1 
+
+
+
