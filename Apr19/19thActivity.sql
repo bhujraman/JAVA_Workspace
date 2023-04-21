@@ -98,28 +98,44 @@ maximum salary for the job. Add exception handling to account for an invalid job
 EMP table. Also, raise an exception if the maximum salary supplied is less than the
 minimum salary.*/
 
-create table emp1 as select * from emp;
+--create table emp1 as select * from emp;
 
+select * from emp1
 
-CREATE OR REPLACE PROCEDURE UpdateSal (
-currjob IN varchar2,
-minsal IN number,
-maxsal IN number
-) IS
-BEGIN
-UPDATE emp1
-SET sal = 
-CASE
-WHEN sal < maxsal THEN maxsal
-ELSE sal --dbms_output.put_line("Salary is less than or equal to current salary')
-END
-wHERE job = currjob;
-END;
-/
+    CREATE OR REPLACE PROCEDURE UpdateSal (currjob IN varchar2,minsal IN number,maxsal IN number) 
+    IS
+    exp_invalid EXCEPTION;
+    exp_invalidJob Exception;
+    exp_max EXCEPTION;
+    curr_sal Number;
+    cnt Number;   
+   Begin    
+    select MAX(sal) into curr_sal from emp1 where job=currjob;
+    select count(*) into cnt from emp1 where job=currjob;
+    Begin
+    if cnt = 0 then raise exp_invalidJob;
+    elsif curr_sal < MAXSAL THEN UPDATE EMP1 SET sal = MAXSAL WHERE JOB = CURRJOB;
+     ELSIF curr_sal = MAXSAL THEN raise exp_invalid;
+    ELSE  raise exp_max;    
+    end if;
+    
+    end; 
+    exception
+    when exp_invalidJob then
+    raise_application_error(-20000,'No such job found');
+    when exp_max then
+    raise_application_error(-20001,'the maximum salary supplied is less than the minimum salary');
+    when exp_invalid then
+    raise_application_error(-20000,'No change in new salary,same as old');
+    --dbms_output.put_line('the maximum salary supplied is less than the minimum salary');
+    end UpdateSal;
+    /
 
-exec UpdateSal('MANAGER',0,10001);
+show errors
 
---select * from emp1 
+exec UpdateSal('SALESMAN',0,7699);
 
+--select * from emp1 where job='SALESMAN'
+ -- select MAX(sal)  from emp1 where job='SALESMAN';
 
 
