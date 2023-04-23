@@ -30,25 +30,32 @@
        
        APR 19
        1. Create a program to retrieve the number of years of service for a specific employee.
-a. Create a stored function called GET_SERVICE_YRS to retrieve the total number of years
-of service for a specific employee.
-The function should accept the employee ID as a parameter and return the number of years
-of service. Add error handling to account for an invalid employee ID.
+	a. Create a stored function called GET_SERVICE_YRS to retrieve the total number of years
+	of service for a specific employee.
+	The function should accept the employee ID as a parameter and return the number of years
+	of service. Add error handling to account for an invalid employee ID.
  
-b. Invoke the function. You can use the following data:
-EXECUTE DBMS_OUTPUT.PUT_LINE(get_service_yrs(999))
-Hint: The above statement should produce an error message because there is no employee
-with employee ID 999.
- 
-EXECUTE DBMS_OUTPUT.PUT_LINE ('Approximately .... ' ||get_service_yrs(7499) || ' years')
-Hint: The above statement should be successful and return the number of years of service
-for employee with employee ID 7499
+	b. Invoke the function. You can use the following data:
+	EXECUTE DBMS_OUTPUT.PUT_LINE(get_service_yrs(999))
+	Hint: The above statement should produce an error message because there is no employee
+	with employee ID 999.
 
-2. Make these functions available in a package name EMPPACK
+	EXECUTE DBMS_OUTPUT.PUT_LINE ('Approximately .... ' ||get_service_yrs(7499) || ' years')
+	Hint: The above statement should be successful and return the number of years of service
+	for employee with employee ID 7499
 
-3. Create a stored procedure called UPD_SAL to update the  salaries
-for a specific job in the EMP table.
-Pass three parameters to the procedure: the job , a new minimum salary, and a new
-maximum salary for the job. Add exception handling to account for an invalid job name in the
-EMP table. Also, raise an exception if the maximum salary supplied is less than the
-minimum salary.
+	2. Make these functions available in a package name EMPPACK
+
+	3. Create a stored procedure called UPD_SAL to update the  salaries
+	for a specific job in the EMP table.
+	Pass three parameters to the procedure: the job , a new minimum salary, and a new
+	maximum salary for the job. Add exception handling to account for an invalid job name in the
+	EMP table. Also, raise an exception if the maximum salary supplied is less than the
+	minimum salary.
+
+
+	Apr 20
+	Design patterns : Write use cases for Singleton, Prototype and Builder pattern
+	
+	Apr 21
+	Implement Abstract Factory with PizzaStore example
