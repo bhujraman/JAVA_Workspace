@@ -62,3 +62,8 @@
 	
 	Apr 24
 	Implement TrafficState using State pattern
+
+
+	Apr 25
+	Performance tuning , run from command prompt
+	
