@@ -59,3 +59,6 @@
 	
 	Apr 21
 	Implement Abstract Factory with PizzaStore example
+	
+	Apr 24
+	Implement TrafficState using State pattern
