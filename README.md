@@ -62,6 +62,8 @@
 	
 	Apr 24
 	Implement TrafficState using State pattern
+	strategy pattern example
+	class diagram for project
 
 
 	Apr 25
