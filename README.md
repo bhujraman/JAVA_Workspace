@@ -69,3 +69,5 @@
 	Apr 25
 	Performance tuning , run from command prompt
 	
+	Apr 28
+	Connecting DB using Spring , context:property-placeholder with a file 
