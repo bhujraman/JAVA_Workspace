@@ -71,3 +71,6 @@
 	
 	Apr 28
 	Connecting DB using Spring , context:property-placeholder with a file 
+	
+	May 2
+	Local Tour/ForeignTour classes and implementation of saveLocalTourRequest and saveForeignTourRequest via repository
