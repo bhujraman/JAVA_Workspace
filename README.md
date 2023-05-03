@@ -74,3 +74,6 @@
 	
 	May 2
 	Local Tour/ForeignTour classes and implementation of saveLocalTourRequest and saveForeignTourRequest via repository
+	
+	May 3
+	implement deletebyId method
