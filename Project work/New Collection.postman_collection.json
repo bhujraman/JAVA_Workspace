@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "4b12a11f-3ac3-464a-a5c5-00aa569d12e9",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "VaccinationProject",
+			"item": [
+				{
+					"name": "localhost:8100/addPatient",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "sam",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "sam",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"patientId\": 2055,\r\n\"patientFirstName\": \"bhuvana1\",\r\n \"patientLastName\":\"Jb\",\r\n \"patientName\" : \"Vidya\",\r\n \"address\":\"Cochin\",\r\n \"patientPwd\" : \"abc123\",\r\n\"mobile\":88233,\r\n \"dob\":\"2019-11-30T11:00:55Z\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8100/updatePatient",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"updatePatient"
+							]
+						},
+						"description": "addPatient"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8100/addPatientVaccination",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"patientId\":953,\r\n \"vacinationId\":5,\r\n \"vaccinationDate\" : \"2023-05-11T11:00:55.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8100/addPatientVaccination",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"addPatientVaccination"
+							]
+						},
+						"description": "AddPatientVaccination"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8100/welcome",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8100/welcome",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"welcome"
+							]
+						},
+						"description": "Welcome "
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8100/deletePatient/953",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"patientFirstName\":\"Administrator\",\r\n \"patientLastName\":\"UserOne\",\r\n \"patientName\" : \"AdminUserUser\"\r\n \"address\":\"Mumbai\",\r\n \"patientPwd\" : \"abc123\"\r\n\"mobile\":98403984303,\r\n \"dob\":\"1997-07-20T11:00:55Z\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8100/deletePatient/952",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"deletePatient",
+								"952"
+							]
+						},
+						"description": "deletePatient"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8100/getAllVaccinatedList",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8100/getAllVaccinatedList",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"getAllVaccinatedList"
+							]
+						},
+						"description": "GetAllVaccinated list"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8100/addPatient",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "sam",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "sam",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientFirstName\": \"Bellcysam\",\r\n    \"patientLastName\": \"srishar\",\r\n    \"address\": \"dds\",\r\n    \"mobile\": 9878962793,\r\n    \"dob\": 20230615,\r\n    \"patientName\": \"samone\",\r\n    \"patientPwd\": \"samone\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8100/addPatient",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"addPatient"
+							]
+						},
+						"description": "Add Patient"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8100/getAllVaccinatedList",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "sam",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "sam",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8100/getVaccinationByPatientId/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"getVaccinationByPatientId",
+								"1"
+							]
+						},
+						"description": "GetAllvaccinatedList"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8100/updatePatient",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "sam",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "sam",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": 1002,\r\n    \"patientFirstName\": \"Bellsam\",\r\n    \"patientLastName\": \"srishar\",\r\n    \"address\": \"dds\",\r\n    \"mobile\": 9876545367,\r\n    \"dob\": 20230615,\r\n    \"patientName\": \"sam\",\r\n    \"patientPwd\": \"sam\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8100/updatePatient",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"updatePatient"
+							]
+						},
+						"description": "UpdatePatient"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
